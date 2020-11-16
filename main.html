@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+The Procrastination Game (Idle)
+</title>
+</head>
+<body>
+<script type="text/javascript">
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
+while (true) {
+setTimeout(() => {seconds+=1;}, 2000);
+
+if (seconds = 60) {
+minutes += 1; 
+seconds = 0;
+} 
+
+if (minutes = 60){
+hours+=1;
+minutes=0;
+} 
+
+if (hours = 24) {
+alert("You won the procrastination game! You successfully procrastinated for one whole day! (Yes I know there is no point in playing it but what do expect I'm a noob)");
+seconds=0;
+minutes=0;
+hours=0;
+} 
+
+document.write("You have procrastinated for",hours,"hours,",minutes,"minutes, and",seconds,"seconds. Your goal is to procrastinate for one day.");
+
+}
+</script>
+</body>
+</html>
